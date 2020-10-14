@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://JimmyTong73.github.io</id>
     <title>Gridea</title>
-    <updated>2020-10-14T13:58:16.707Z</updated>
+    <updated>2020-10-14T15:08:40.190Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://JimmyTong73.github.io"/>
     <link rel="self" href="https://JimmyTong73.github.io/atom.xml"/>
@@ -10,6 +10,36 @@
     <logo>https://JimmyTong73.github.io/images/avatar.png</logo>
     <icon>https://JimmyTong73.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[ArrayList]]></title>
+        <id>https://JimmyTong73.github.io/post/arraylist/</id>
+        <link href="https://JimmyTong73.github.io/post/arraylist/">
+        </link>
+        <updated>2020-10-14T14:55:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>传入一个int类型参数的构造方法</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>传入一个int类型参数的构造方法</p>
+<!-- more -->
+<p>public ArrayList(int initialCapacity) {<br>
+if (initialCapacity &gt; 0) {<br>
+this.elementData = new Object[initialCapacity];<br>
+} else if (initialCapacity == 0) {<br>
+this.elementData = EMPTY_ELEMENTDATA;<br>
+} else {<br>
+throw new IllegalArgumentException(&quot;Illegal Capacity: &quot;+<br>
+initialCapacity);<br>
+}<br>
+}</p>
+<!-- more -->
+<p>ArrayList(int initialCapacity) 创建一个指定长度大小的ArrayList集合，<br>
+transient Object[] elementData;  elementData属性是一个Object类型数组，<br>
+transient修饰不可被序列化。<br>
+当参数大于零时，给 elementData赋一个指定长度的Object类型数组，<br>
+当参数为零时，创建一个默认的长度为10的集合，<br>
+private static final int DEFAULT_CAPACITY = 10;<br>
+当参数！=&gt;0时,报参数不合法异常。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[test]]></title>
         <id>https://JimmyTong73.github.io/post/test/</id>
